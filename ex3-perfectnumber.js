@@ -12,6 +12,7 @@ readline.question("Enter a number: ", (text) => {
 });
 
 function perfectNumber(number) {
+  if (!Number.isInteger(number)) return false;
   if (number <= 1) return false;
   for (let i = 1; i <= number / 2; i++) {
     if (number % i !== 0) {
